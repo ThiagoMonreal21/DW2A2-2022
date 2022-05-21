@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset=" UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>COVID-19</title>
+</head>
+
+<body>
+    <div id="overview">
+        <header id="find" class="no-print">
+            <h1>INFORMATIVO COVID-19</h1>
+            <form id="cep-find">
+                <input type="text" id="cep" placeholder="Digite seu CEP...">
+                <small id="cep-error"></small>
+            </form>
+        </header>
+        <main id="results">
+            <table id="result">
+                <caption>Consulta por Casos de COVID-19</caption>
+                <tbody>
+                    <tr>
+                        <td>Cidade:</td>
+                        <td id="city"></td>
+                    </tr>
+                    <tr>
+                        <td>Estado (UF):</td>
+                        <td id="state"></td>
+                    </tr>
+                    <tr>
+                        <td>Mortes:</td>
+                        <td id="death"></td>
+                    </tr>
+                    <tr>
+                        <td>Casos confirmados:</td>
+                        <td id="cases"></td>
+                    </tr>
+                    <tr>
+                        <td>Suspeitas:</td>
+                        <td id="suspects"></td>
+                    </tr>
+                    <tr>
+                        <td>Recusaram fazer o exame:</td>
+                        <td id="refuses"></td>
+                    </tr>
+                    <tr>
+                        <td>Atualizado em:</td>
+                        <td id="datetime"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+    <script type="module" src="./modules/main.js"></script>
+</body>
+
+</html>
